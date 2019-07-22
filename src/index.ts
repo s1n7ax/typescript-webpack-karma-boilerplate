@@ -1,12 +1,9 @@
-export default class App {
-    greet() {
-        return 'Hello World';
-    }
-}
+export default function main() {
+	if(process.env.NODE_ENV === 'development') {
+		console.log('only in dev')
+	}
 
-const main = () => {
-    const a = new App();
-    console.log(a.greet());
-};
+	console.log('hello world')
+}
 
 main();

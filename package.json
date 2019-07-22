@@ -8,12 +8,14 @@
     "scripts": {
         "dev": "NODE_ENV=development",
         "prod": "NODE_ENV=production",
-        "build": "yarn dev webpack",
+        "build": "yarn prod webpack",
+        "dev_build": "yarn dev webpack",
         "test": "yarn dev karma start",
         "test:watch": "yarn dev karma start"
     },
     "devDependencies": {
         "@types/jasmine": "^3.3.13",
+        "@types/node": "^12.6.8",
         "karma": "^4.1.0",
         "karma-chrome-launcher": "^2.2.0",
         "karma-jasmine": "^2.0.1",
